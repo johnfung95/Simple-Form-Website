@@ -1,0 +1,146 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+
+html body {
+    width: auto;
+    height: auto;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url(./img/tomato.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    margin: auto;
+    grid-template-rows: auto 1fr;
+}
+
+.header {
+    border-bottom: 2px solid tomato;
+    display: inline-block;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.col {
+    padding: 1rem;
+    flex: 0 1 100%;
+}
+
+.col li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.menuBtn {
+    background-color:white;
+    border: none;
+    color: rgb(201, 57, 31);
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.menuBtn:hover {
+    border: 4px solid tomato;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+}
+
+.table-container {
+    position: relative;
+    margin: auto;
+    flex: 1 1 100px;
+    overflow: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid tomato;
+}
+
+.orderTable {
+    border-left: 1px solid tomato;
+    border-right: 1px solid tomato;
+    height: 50%;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.infoBar, th{
+    padding: 10px;
+    border-bottom: 1px solid tomato;
+}
+
+.titleBar th {
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.dateBar td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid tomato;
+    font-size: 20px;
+    font-style:italic;
+}
+
+.companyName {
+    text-align: left;
+    font-size: 18px;
+}
+
+.userName {
+    text-align: right;
+    font-size: 18px;
+}
+
+.listItem {
+    padding: 10px;
+}
+
+.listItem td{
+    text-align: left;
+    padding: 10px;
+    border: thin  solid black;
+}
+
+#productInfo {
+    padding: 10px;
+}
+
+#productInfo td{
+    text-align: left;
+    padding: 10px;
+    border: thin  solid black;
+}
+
+input {
+    width: 100%;
+}
+
+.productPic {
+    width: 100%;
+}
+
+.copyRightLogo td {
+    padding-top: 20px;
+    border: 1px solid tomato;
+}
+
+button {
+    padding: 10px;
+}

@@ -1,0 +1,96 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+
+html body {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url(./img/tomato.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    margin: auto;
+    grid-template-rows: auto 1fr;
+}
+
+.header {
+    border-bottom: 2px solid tomato;
+    display: inline-block;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.col {
+    padding: 1rem;
+    flex: 0 1 100%;
+}
+
+.col li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.menuBtn {
+    background-color:white;
+    border: none;
+    color: rgb(201, 57, 31);
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.menuBtn:hover {
+    border: 4px solid tomato;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+}
+
+.content-container {
+    width: 100%;
+    height: 100%;
+}
+
+#products-table {
+    flex: 1 1 0;
+    table-layout: fixed;
+    margin: auto;
+    grid-template-rows: auto;
+    border: 1px solid tomato;
+    border-collapse: collapse;
+    width: 75%;
+    height: 100%;
+}
+
+#tableHead {
+    font-size: 32px;
+    text-align: left
+}
+
+table td {
+    border: 1px solid tomato;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.productPic {
+    flex: 1 1 0;
+    display: block;
+    margin: auto;
+    width: 100%;
+}
